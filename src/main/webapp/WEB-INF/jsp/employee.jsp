@@ -26,7 +26,7 @@
       <input type="text" class="form-control" id="role"  name="role" placeholder="Enter role" required="required">
     </div>
    
-    <button type="submit" class="btn btn-primary">Submit Employee Details</button>
+    <button type="submit" class="btn btn-primary" style="border-radius:0px;">Submit Employee Details</button>
   </form:form>
 </div>
 
@@ -40,7 +40,7 @@
         <th>ID</th>
         <th>Employee Name</th>
         <th>Role</th>
-         <th>update</th>
+         <th>Update</th>
           <th>Delete</th>
       </tr>
     </thead>
@@ -50,8 +50,8 @@
         <td>${emp.empId }</td>
         <td>${emp.empName }</td>
         <td>${emp.role }</td>
-         <th ><a href="update?id=${emp.empId }">update</a></th>
-     	 <th ><a href="delete?id=${emp.empId }">Delete</a></th>
+         <th ><a class="btn btn-info" style="border-radius:0px;" href="update?id=${emp.empId }">Update</a></th>
+     	 <th ><a class="btn btn-danger" style="border-radius:0px;"  href="delete?id=${emp.empId }">Delete</a></th>
       </tr>
      </c:forEach>
     </tbody>
